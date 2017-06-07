@@ -1,0 +1,65 @@
+%parallax{
+  height: 100%;
+  width:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+%icon{
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  overflow: visible;
+}
+
+@mixin modal($color, $bright){
+  min-height: 100%;
+  min-width: 100%;
+  overflow:auto;
+  background-color: rgba($color,$bright);
+}
+
+@mixin large($color, $bright,$hei,$wid){
+  height: $hei;
+  width: $wid;
+  background-color: rgba($color,$bright);
+}
+@mixin obliqueDiv($color,$font-color,$border-color,$font-size){
+  padding: 15px;
+  border: 2px solid $border-color;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba($color,0.5);
+  p{
+    font-size: $font-size;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    color: $font-color;
+  }
+}
+
+@mixin thinLine($line-height, $line-width, $line-color){
+  display: block;
+  width: $line-width;
+  max-height: $line-height;
+  background-color: $line-color;
+  margin: 0 auto;
+
+}
+@mixin fontProperities($font-family,$font-size,$font-color){
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $font-color;
+}
+@font-face {
+font-family:'komoda';
+src:url('../Komoda/Komoda.otf');
+}

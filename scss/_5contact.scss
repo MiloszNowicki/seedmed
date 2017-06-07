@@ -1,0 +1,146 @@
+@import "mixholder";
+.img-3{
+  min-height: 100%;
+  height: auto;
+  width:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  background-image: url('../materials/PRODUKTY/slajder3.jpg');
+  justify-content: center;
+}
+.img-3-modal{
+  @include modal(black,0.9);
+  //@extend %flexi;
+  //justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.img-3-title{
+  height: 25%;
+  width:100%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+
+  @include fontProperities('komoda',10vh,white);
+  p{
+    @include fontProperities('komoda',5vh,grey);
+    text-align: center;
+  }
+}
+.img3-separate{
+  @include thinLine(5px,15%,#d30834);
+  margin-bottom: 5%;
+  align-self: flex-start;
+  min-height: 5px;
+
+}
+
+.message-wrap{
+  height: 65%;
+  width: 100%;
+  max-width: 920px;
+  padding: 5%;
+  //@extend %flexi;
+
+}
+
+.message-row{
+  //@extend %flexi2;
+  justify-content:center space-between;
+  width:100%;
+  margin-bottom: 25px;
+}
+
+%area{
+  padding: 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid #d30834;
+  border-radius: 10px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
+
+}
+
+.area-1{
+  width:48%;
+  height: 58px;
+  @extend %area;
+  box-sizing: border-box;
+}
+
+
+.area-2{
+  width:100%;
+  height: 58px;
+  @extend %area;
+}
+
+.area-3{
+  width:100%;
+  height: 131px;
+  @extend %area;
+}
+.send{
+  @include obliqueDiv(white,black,#d30834,2vh);
+  display: block;
+  margin: 0 auto;
+}
+.detailed-info{
+  @include large(black,0.7,auto,100%);
+  // /justify-content: space-between;
+}
+.line-info{
+  @include thinLine(5px,15%,#d30834);
+  //margin-bottom: 5%;
+  //align-self: flex-start;
+  min-height: 3px;
+  margin:3px;
+}
+.contact-list{
+  p{
+    font-size: 2vh;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    flex-basis: 100%;
+  }
+}
+@media(min-width:200px)  {
+  .contact-list{
+    p{
+        text-align: center;
+    }
+  }
+  .contact-list{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media(min-width:768px)  {
+  .contact-list{
+    p{
+        text-align: left;
+    }
+  }
+  .contact-list{
+    justify-content: flex-start;
+    //align-items: center;
+    align-content: center;
+    margin-left: 20%;
+  }
+}
+.mapWrap{
+  height:450px;
+  max-width:700px;
+}
+#map{
+  //align-self: flex-end;
+
+}

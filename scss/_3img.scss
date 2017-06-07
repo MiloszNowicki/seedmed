@@ -1,0 +1,94 @@
+@import "mixholder";
+@import "3imgvar";
+
+@media(min-width:768px)  {
+  .img-2{
+    height: auto;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-image: url('../materials/PRODUKTY/slajder1.jpg');
+  }
+  .img2-modal{
+    justify-content:center;
+  }
+}
+@media(min-width:200px)  {
+  .img-2{
+    @include large($coop-small-bg-color,$coop-small-bg-brightness,auto,100%);
+  }
+  .alium-about, .geotek-about{
+    min-width: 240px;
+  }
+}
+.img2-modal{
+  @include modal($coop-3-modal-color,$coop-3-modal-brightness);
+  align-content: flex-start;
+  overflow: hidden;
+}
+.coop-title{
+  @include fontProperities($coop-title-3-family,$coop-title-3-size,$coop-title-3-color);
+  text-align: center;
+  height: 10%;
+}
+.line-coop2{
+  @include thinLine(5px,10%,$coop-color-line);
+  min-height: 5px;
+}
+
+.line-coop{
+  @include thinLine(5px,15%,$coop-color-line);
+  margin-top:10px;
+  min-height: 5px;
+}
+.contain-info{
+  align-items: center;
+  justify-content: center;
+}
+
+.geotek-about{
+  background-color: rgba($geotek-bg-color,$geotek-bg-brightness);
+  border-radius: 10px;
+  margin: 30px;
+}
+.alium-about{
+  background-color: rgba($alium-bg-color,$alium-bg-brightness);
+  border-radius: 10px;
+  margin:30px;
+
+}
+.alium-about, .geotek-about{
+@include fontProperities($about-text-3-family,$about-text-3-size,$about-text-3-color);
+}
+.geotek-logo{
+min-width: 215px;
+min-height: 131px;
+margin: 0px;
+}
+.alium-logo{
+  max-width: 215px;
+  max-height: 131px;
+}
+
+
+.align-left{
+  display: inline-block;
+  float:left;
+  clear: none;
+  margin: 0 10px 10px 0;
+}
+
+@media (max-width:500px){
+  .align-left{
+    display: block;
+    clear: both;
+    float: none;
+    margin: 5px auto;
+  }
+  .clear{
+    clear:both;
+  }
+}

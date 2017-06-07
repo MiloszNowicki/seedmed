@@ -1,0 +1,95 @@
+@import "1imgvar";
+@import "paths";
+@import "mixholder";
+
+.img-1{
+  @extend %parallax;
+  background-image:url('../materials/PRODUKTY/slajder2.jpg');
+}
+@media(min-width:768px)  {
+  .modal-img-1{
+    justify-content: center;
+  }
+}
+.modal-img-1{
+  @include modal($modal-1-color,$modal-1-brightness);
+  align-items: stretch;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.control{
+  height: 100%;
+  max-width: 1000px;
+  min-width:280px;
+  min-height: 252px;
+}
+.icon{
+  flex: 2;
+  position: relative;
+  min-height: 20vh;
+  height: 50vh;
+  padding-top: $seed-ratio;
+  margin: 0 auto;
+}
+.seedmed-logo{
+  content: $seedmed-logo;
+}
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border:none;
+}
+.contact{
+  height: 30%;
+  position: relative;
+  min-height: 160px;
+  flex-grow: 1;
+  align-self: flex-end;
+}
+.two-rows{
+  width:50%;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+  justify-content: center;
+}
+.contact-row{
+  justify-content:space-between center;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+.contact-cell-1{
+@include obliqueDiv($button-color-1,$button-color-2,$button-color-1,$button-font-size);
+font-family: $button-f-family;
+min-height: 30%;
+margin:5px;
+}
+.contact-cell-2{
+@include obliqueDiv($button-color-2,$button-color-1,$button-color-2,$button-font-size);
+font-family: $button-f-family;
+min-height: 30%;
+margin:5px;
+}
+
+@media  (min-width:200px){
+  #row1{
+    padding: 12px 12px 0 12px;
+  }
+  #row2{
+    padding: 0 12px 12px 12px ;
+  }
+}
+@media  (min-width:768px){
+  #row1{
+    padding: 12px 0 12px 12px;
+  }
+  #row2{
+    padding: 12px 12px 12px 0;
+  }
+}

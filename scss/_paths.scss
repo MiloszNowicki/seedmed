@@ -1,0 +1,30 @@
+
+//Img 1 paralax:
+$first-paralax:url('/home/mily/Pulpit/seedmed/materials/PRODUKTY/slajder2.jpg');
+//seed med logo, remember about adding padding equal to (width/height)% ratio
+$seedmed-logo:url('/home/mily/Pulpit/seedmed/materials/PRODUKTY/sedmed.svg');
+$seed-ratio:50.4%;
+
+//About svg logos, remember about adjusting padding to logos! padding=(width/height)%!!!!
+/*
+$ic-1-path:url('/home/mily/Pulpit/seedmed/settings.svg');
+$ic-1-ratio: 100%;
+
+$ic-2-path:url('/home/mily/Pulpit/seedmed/settings.svg');
+$ic-2-ratio: 100%;
+
+$ic-3-path:url('/home/mily/Pulpit/seedmed/settings.svg');
+$ic-3-ratio: 100%;
+
+$ic-4-path:url('/home/mily/Pulpit/seedmed/settings.svg');
+$ic-4-ratio: 100%;
+function myMap() {
+  var myCenter = new google.maps.LatLng(39.039481,125.762180);
+  var mapCanvas = document.getElementById("googleMap");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+      ************DOESNT WORK WITH SVG****************************
+*/

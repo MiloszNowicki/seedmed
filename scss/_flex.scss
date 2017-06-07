@@ -1,0 +1,50 @@
+$col:1;
+$col-width:100%/12;
+$row:1;
+$row-width:100%/12;
+
+.container{
+  display:flex;
+  flex-flow:column nowrap;
+}
+
+
+
+[class*='col-']{
+  float: left;
+  padding: 12px;
+}
+@media  (min-width:200px){
+  @for $row from 1 through 12{
+   .row-#{$row}{
+     width:$row-width*$row;
+   }
+ }
+  @for $cols from 1 through 12{
+    .col-m#{$cols}{
+     flex-basis:$col-width*$cols;
+   }
+ }
+}
+@media (min-width:768px){
+  .container{
+    flex-flow:row wrap;
+  }
+  @for $cols from 1 through 12{
+    .col-m#{$cols}{
+      flex-basis:$col-width*$cols;
+    }
+  }
+}
+
+
+
+
+.rows{
+  display: flex;
+  flex-flow: row wrap;
+}
+.columns{
+  display: flex;
+  flex-flow: column wrap;
+}
