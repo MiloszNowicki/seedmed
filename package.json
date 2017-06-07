@@ -1,0 +1,15 @@
+{
+  "name": "seedmed",
+  "version": "1.0.0",
+  "description": "Site with medical supplies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milosz Nowicki",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}
