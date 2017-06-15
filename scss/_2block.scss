@@ -22,27 +22,32 @@
 }
 .line-about{
   @include thinLine(5px,15%,$line-color2);
-  margin-bottom: 5%;
+  //amargin-bottom: 5%;
   align-self: flex-start;
   min-height: 5px;
 }
 .strategy{
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 .three-rows{
   justify-content: center;
+  height: auto;
 }
 .icon-2{
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
   position: relative;
-  padding-top: 100%;
+  //padding-top: 100%;
 }
 
 .center{
   display: flex;
   justify-content: center;
+  height: auto;
+  min-height: 100px;
+  min-width: 100px;
 }
 .description{
   @include fontProperities($icon-2-sub-family,$icon-2-sub-size,$icon-2-sub-color);

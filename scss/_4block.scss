@@ -20,7 +20,13 @@
   @include large($galery-bg-color,$galery-bg-brightness,auto,100%);
   align-content: flex-start;
   align-items: center;
+  align-self: flex-start;
 
+}
+.zip{
+  justify-content: flex-start;;
+  align-content: flex-start;
+  align-items: flex-start;;
 }
 .galery-title{
   height: 15%;

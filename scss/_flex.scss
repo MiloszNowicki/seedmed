@@ -21,7 +21,7 @@ $row-width:100%/12;
    }
  }
   @for $cols from 1 through 12{
-    .col-m#{$cols}{
+    .col-s#{$cols}{
      flex-basis:$col-width*$cols;
    }
  }
