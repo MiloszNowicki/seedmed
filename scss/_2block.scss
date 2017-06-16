@@ -10,7 +10,8 @@
   height: 40%;
   align-items: center;
   p{
-    width: 100%;
+    min-width: 171px;
+    max-height: 100px;
     @include fontProperities($title-2-f-family,7vh,$title-2-color);
     text-align: center;
   }
@@ -26,20 +27,27 @@
   align-self: flex-start;
   min-height: 5px;
 }
+.line-about2{
+  @include thinLine(5px,5%,$line-color2);
+  //amargin-bottom: 5%;
+  align-self: center;
+  min-height: 5px;
+}
 .strategy{
   justify-content: center;
   align-items: center;
   height: auto;
 }
 .three-rows{
+  min-width: 190px;
   justify-content: center;
   height: auto;
 }
 .icon-2{
-  min-width: 100px;
-  min-height: 100px;
+  width:100px;
+  max-height: auto;
   position: relative;
-  //padding-top: 100%;
+  padding-top: 100%;
 }
 
 .center{
@@ -52,23 +60,54 @@
 .description{
   @include fontProperities($icon-2-sub-family,$icon-2-sub-size,$icon-2-sub-color);
   text-align: center;
-  margin-top: 20px;
 }
 #desc{
   padding: 12px 0 12px 0;
+  height: auto;
+
 }
 @media  (min-width:200px){
-  #sstrategy{
-    flex-flow: wrap;
+  #str{
+    height: auto;
+  }
+  .strategy{
+    //min-height: 800px;
   }
   .three-rows{
     align-items: center;
+    height: auto;
+  }
+  .center{
+    height: auto;
+  }
+  .icon-2{
+
   }
   #desc{
-    margin-top: 0;
+    margin-top: 20px;
+    height: auto;
   }
+  .strategy{
+    height: 850px;
+  }
+  .about{
+    height: 650px;
+  }
+  .text{
+    height:1550px;
+  }
+
 }
 @media  (min-width:768px){
+  .strategy{
+    height: auto;
+  }
+  .about{
+    height: auto;
+  }
+  .text{
+    height: auto;
+  }
   #str{
     flex-flow: nowrap;
   }

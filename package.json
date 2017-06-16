@@ -11,5 +11,8 @@
   "dependencies": {
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0"
   }
 }
